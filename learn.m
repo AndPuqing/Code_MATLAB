@@ -2,7 +2,7 @@
 clc,clear,close all
 load('hivdata.mat');
 
-%---cd4(60-30)---%
+%---cd4(30-60)---%
 data=zeros(1,2); %¿ª±Ù¿Õ¼ä
 for i=1:1:45
    a=find(hivdata(:,1)==cd460(i));
@@ -20,7 +20,7 @@ y=f(1)*t.^4+f(2)*t.^3+f(3)*t.^2+f(4)*t+f(5);
 plot(t,y,'b','linewidth',1)
 hold on
 
-%---cd4(30-60)---%
+%---cd4(0-30)---%
 clear data x y a weeks cd4 temp f;
 data=zeros(1,2);
 for i=1:1:100
