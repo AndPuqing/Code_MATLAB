@@ -24,3 +24,14 @@ for in=1:i-1 %i-1因为后面是in+1
    z(in+1)=z(in)+w*t;
 end
 plot3(x,y,z)
+
+% ode45版
+% [t,y]=ode45(@odefun,[0,59],[-10,10.1,25]);
+% plot3(y(:,1),y(:,2),y(:,3))
+% 
+% function res=odefun(t,y)
+%     res=zeros(3,1);
+%     res(1)=10*(y(2)-y(1));
+%     res(2)=y(1)*(28-y(3))-y(2);
+%     res(3)=y(1)*y(2)-(8/3)*y(3);
+% end
