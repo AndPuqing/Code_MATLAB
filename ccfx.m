@@ -35,3 +35,7 @@ if CR<0.10
 else
     disp('注意：CR >= 0.10，因此该判断矩阵A需要进行修改!');
 end
+
+disp('平均值=')
+a=(sum(Stand_A,2)./n)+(Prduct_n_A ./ sum(Prduct_n_A))+(V(:,c) ./ sum(V(:,c)));
+disp(a)
